@@ -1,0 +1,31 @@
+.gameField {
+  width: max-content;
+  height: 100%;
+
+  padding: 20px;
+
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  background-color: rgb(166, 242, 242);
+
+  border-radius: 20px;
+}
+
+.boardContainer {
+  display: inline-flex;
+
+  width: 30vw;
+  height: 30vw;
+  
+  background-color: red;
+}
+
+.scoreContainer {
+  height: 30vw;
+
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+}

@@ -1,0 +1,21 @@
+.square {
+  flex: 33%;
+  height: 100%;
+
+  border: 1px solid black;
+}
+
+
+.state {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &--cross {
+    background-image: url('../../images/cross.svg');
+  }
+
+  &--circle {
+    background-image: url('../../images/circle.svg');
+  }
+}
