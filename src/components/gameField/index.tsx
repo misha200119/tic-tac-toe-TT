@@ -25,22 +25,23 @@ export const GameField: FC<Props> = memo((props) => {
   return (
     <div className={styles.gameField}>
       <div className={styles.boardContainer}>
-        <Board setScore={setScore} />
+        <Board
+          score={score}
+          setScore={setScore}
+          playerX={firstPalayerName}
+          playerO={secondPlayerName}
+        />
       </div>
 
       <div className={styles.scoreContainer}>
         <h2>Score</h2>
 
         <p>
-          {firstPalayerName}
-          :
-          {score[firstPalayerName]}
+          {`${firstPalayerName} (X) : ${score[firstPalayerName]}`}
         </p>
 
         <p>
-          {secondPlayerName}
-          :
-          {score[secondPlayerName]}
+          {`${secondPlayerName} (O) : ${score[secondPlayerName]}`}
         </p>
       </div>
     </div>

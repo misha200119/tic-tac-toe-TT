@@ -10,12 +10,15 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  cursor: pointer;
 
   &--cross {
     background-image: url('../../images/cross.svg');
+    cursor: auto;
   }
 
   &--circle {
     background-image: url('../../images/circle.svg');
+    cursor: auto;
   }
 }
